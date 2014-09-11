@@ -1,4 +1,6 @@
 def coach_answer(your_message)
+puts "je comprends que" "#{your_message}"
+	return reponse
   # TODO: return coach answer to your_message
 end
 
