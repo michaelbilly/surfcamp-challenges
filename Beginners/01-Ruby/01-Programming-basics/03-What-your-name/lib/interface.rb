@@ -14,14 +14,21 @@ def name_from_terminal
   second_name = ask_and_get("middle name")
   last_name = ask_and_get("last name")
 
-  compute_name(first_name, second_name, last_name)
+  full_name = compute_name(first_name, second_name, last_name)
+  return full_name
 end
+ 
+ response = name_from_terminal
+ long = response.size
 
-full_name = name_from_terminal
+# puts response
+puts "welcome " + "#{response}" + " your name is composed by #{long} characters"
+puts "bienvenue #{response} votre nom est composé de #{long} caractères"
 
-custom_message = "welcome #{full_name}"
+#pourquoi ça ça marche pas welcome #{response}votre nom a #{full_name}.size " + "caractères"
+
 #TODO: use string concatenation to build a custom message embedding the computed full_name
 
 # custom_message =
 
-puts custom_message
+
